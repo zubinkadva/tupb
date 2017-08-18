@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Ultimate Phone Book</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_contact">Adding a new contact</string>
+    <string name="title_activity_view_contacts">Viewing all contacts</string>
+    <string name="title_activity_search_contact">Searching a contact</string>
+    <string name="title_activity_update_contact">Updating a contact</string>
+    <string name="title_activity_filter_contacts">Filtering contacts</string>
+    <string name="title_activity_contact_details">Contact details</string>
+    <string name="Insert">Insert</string>
+    <string name="Cancel">Cancel</string>
+    <string name="title_activity_city_filter">Filter by city</string>
+    <string name="title_activity_state_filter">Filtering by state</string>
+    <string name="title_activity_country_filter">Filtering by country</string>
+    <string name="title_activity_filter_city">Filter By City</string>
+    <string name="title_activity_filter_state">Filter By State</string>
+    <string name="title_activity_filter_country">Filter By Country</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_splash">Splash</string>
+    <color name="black">#000000</color>
+
+</resources>

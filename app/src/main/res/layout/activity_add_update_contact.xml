@@ -1,0 +1,278 @@
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        tools:context="com.zar.theultimatephonebook.AddUpdateContact"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_row="0"
+                android:layout_column="0">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cmdGallery"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_gravity="center|right" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cmdCamera"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_gravity="center|right" />
+
+                <ImageView
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:id="@+id/imgContact"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_rowSpan="2"
+                    android:cropToPadding="false" />
+            </GridLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtFirst"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:hint="First Name"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtMiddle"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:hint="Middle Name"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtLast"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:hint="Last Name"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/txtP1"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:hint="Phone 1"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true"
+                android:phoneNumber="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/txtP2"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:hint="Phone 2 (Optional)"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true"
+                android:phoneNumber="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/txtEmail"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:hint="Email Address (Optional)"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true" />
+
+
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDOB"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="fill_horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:hint="Date Of Birth"
+                    android:enabled="false" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:background="@android:drawable/ic_menu_my_calendar"
+                    android:layout_gravity="center_vertical"
+                    android:padding="30dp" />
+            </GridLayout>
+
+
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_row="8"
+                    android:layout_column="0">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:id="@+id/rdMale"
+                        android:checked="true"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingRight="40dp"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:id="@+id/rdFemale"
+                        android:checked="false"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:textSize="20dp" />
+                </RadioGroup>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:id="@+id/txtAddress"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:layout_gravity="bottom"
+                android:hint="Postal Address"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCity"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:hint="City"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtState"
+                android:layout_row="11"
+                android:layout_column="0"
+                android:hint="State"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCountry"
+                android:layout_row="12"
+                android:layout_column="0"
+                android:hint="Country"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:singleLine="true" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="13"
+                android:paddingTop="20dp"
+                android:layout_column="0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="No. of family members"
+                    android:id="@+id/textView"
+                    android:layout_column="0"
+                    android:layout_row="0" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:id="@+id/txtNo"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:singleLine="true" />
+            </GridLayout>
+
+        </GridLayout>
+    </ScrollView>
+
+

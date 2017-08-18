@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zar.theultimatephonebook.AddUpdateContact" >
+    <item android:id="@+id/cmdInsert"
+        android:title="@string/Insert"
+        android:icon="@android:drawable/checkbox_on_background"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        />
+
+    <item android:id="@+id/cmdCancel"
+        android:title="@string/Cancel"
+        android:icon="@android:drawable/ic_delete"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        />
+</menu>

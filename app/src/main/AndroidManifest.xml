@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zar.theultimatephonebook" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <supports-screens android:resizeable="true"
+    android:smallScreens="true"
+    android:normalScreens="true"
+    android:largeScreens="true"
+    android:xlargeScreens="true"
+    android:anyDensity="true"
+    android:requiresSmallestWidthDp="120"
+    android:compatibleWidthLimitDp="320"
+    android:largestWidthLimitDp="640"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo"
+        >
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".AddUpdateContact"
+            android:label="@string/title_activity_add_contact"
+            android:parentActivityName=".Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zar.theultimatephonebook.Home" />
+        </activity>
+        <activity
+            android:name=".ViewContacts"
+            android:label="@string/title_activity_view_contacts"
+            android:parentActivityName=".Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zar.theultimatephonebook.Home" />
+        </activity>
+        <activity
+            android:name=".SearchContact"
+            android:label="@string/title_activity_search_contact"
+            android:parentActivityName=".Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zar.theultimatephonebook.Home" />
+        </activity>
+        <activity
+            android:name=".FilterContacts"
+            android:label="@string/title_activity_filter_contacts"
+            android:parentActivityName=".Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zar.theultimatephonebook.Home" />
+        </activity>
+        <activity
+            android:name=".ContactDetails"
+            android:label="@string/title_activity_contact_details" >
+        </activity>
+        <activity
+            android:name=".FilterCity"
+            android:label="@string/title_activity_filter_city"
+            android:parentActivityName=".FilterContacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zar.theultimatephonebook.FilterContacts" />
+        </activity>
+        <activity
+            android:name=".FilterState"
+            android:label="@string/title_activity_filter_state"
+            android:parentActivityName=".FilterContacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zar.theultimatephonebook.FilterContacts" />
+        </activity>
+        <activity
+            android:name=".FilterCountry"
+            android:label="@string/title_activity_filter_country"
+            android:parentActivityName=".FilterContacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zar.theultimatephonebook.FilterContacts" />
+        </activity>
+
+        <activity android:name="com.zar.theultimatephonebook.Splash"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
